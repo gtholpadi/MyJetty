@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<script type="text/javascript" src="pramukhime/js/pramukhime.js"></script>
+        <script type='text/javascript' src="pramukhime/js/pramukhindic.js" ></script>
+        <script type="text/javascript" src="pramukhime/js/pramukhime-common.js"></script>
+	</head>
+<body>
+	<br><br><br>
+	<center>
+	<form method="post">
+		<table>
+		<tr>
+		<td>
+		<input id="qbox" type="text" name="query" value="" autofocus style="height:40px;font-size:12pt;" size="45" tabindex=1>
+		</td>
+		<td>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		(Type in 
+		<select id="drpLanguage" onchange="javascript:changeLanguage(this.options[this.selectedIndex].value);" name="drpLanguage" title="Choose Language" class="big" tabindex=2>
+	<!--	<option value=':'>--Pramukh Indic--</option> -->
+			<option value=":english" selected="selected">English</option>
+	<!--	<option value='pramukhindic:assamese'>Assamese</option> -->
+			<option value='pramukhindic:bengali'>Bengali</option>
+	<!--	<option value='pramukhindic:bodo'>Bodo</option>
+			<option value='pramukhindic:dogri'>Dogri</option>
+			<option value='pramukhindic:gujarati'>Gujarati</option> -->
+			<option value='pramukhindic:hindi'>Hindi</option>
+			<option value='pramukhindic:kannada'>Kannada</option>
+	<!--	<option value='pramukhindic:konkani'>Konkani</option>
+			<option value='pramukhindic:maithili'>Maithili</option>
+			<option value='pramukhindic:malayalam'>Malayalam</option>
+			<option value='pramukhindic:manipuri'>Manipuri</option>
+			<option value='pramukhindic:marathi'>Marathi</option>
+			<option value='pramukhindic:nepali'>Nepali</option>
+			<option value='pramukhindic:oriya'>Oriya</option>
+			<option value='pramukhindic:punjabi'>Punjabi</option>
+			<option value='pramukhindic:sanskrit'>Sanskrit</option>
+			<option value='pramukhindic:santali'>Santali</option>
+			<option value='pramukhindic:sindhi'>Sindhi</option>
+			<option value='pramukhindic:tamil'>Tamil</option>
+			<option value='pramukhindic:telugu'>Telugu</option> 
+			<option value=":english" selected="selected">English (F9)</option> -->
+		</select>
+		) <small><small>Powered by <a href="http://www.vishalon.net/PramukhIME/JavaScriptLibrary.aspx">Pramukh IME</small></small>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<br><br>
+		<center>
+		<input type="submit" value="Search" style="height:35px;width:150px" tabindex=3> <br><br>
+		</center>
+		</td>
+		<td></td>
+		</tr>
+		<tr>
+		<td>
+		<br><br>
+		<small>Example queries: tenure, खान, ಲೆಕ್ಕಾಚಾರ </small>
+		</td>
+		</tr>
+		</table>
+	</form>
+	</center>
+	<br><br><br>
+	
+	<!-- Indic IME Script follows. -->
+	<script language="javascript" type="text/javascript">
+	    pramukhIME.addLanguage(PramukhIndic);
+		pramukhIME.enable();
+		//pramukhIME.onLanguageChange(scriptChangeCallback);
+		changeLanguage(":english")
+	</script>
+</body>
+
+</html>

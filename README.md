@@ -1,0 +1,1 @@
+This is a simplistic web server using Jetty, mainly for use as a frontend for calling Lucene. It supports typing in Indic languages using the Javascript API from Pramukh IME (http://www.vishalon.net/PramukhIME.aspx).
